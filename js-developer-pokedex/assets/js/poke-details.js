@@ -1,13 +1,22 @@
-for(let i = 0; i < pokemonList.length; i++) {
+for (let i = 0; i < pokemonList.length; i++) {
     console.log(pokemonList[i]);
 }
 
-function getPokemon() {   
-    
-    const pokeName = document.querySelectorAll('.pokemon');
-    console.log(pokeName);
+function getPokemon(pokemonName) {
 
-    pokeName.forEach(element => console.log(element.id));
+    var idPokemonString = document.getElementById(`${pokemonName.id}`).querySelectorAll('.number')[0].innerHTML;
 
-    
+    var idPokemonSplit = idPokemonString.split('');
+
+    var idPokemon = '';
+
+    idPokemonSplit.forEach(element => {
+        idPokemon = '';
+        if (element > 0) {
+            idPokemon += element;
+        }
+    });
+
+    const pokeName = document.querySelector('.pokemon.' + pokemonName.id);
+    document.getElementById('pokemon-img').src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${idPokemon}.svg`;
 }
