@@ -3,13 +3,19 @@
     margin: 1.5rem 1rem;
     position: absolute;
     padding: .8rem;
-    background: rgba(255, 255, 255, 0.088);
+    background: rgba(255, 255, 255, 0.033);
     border-radius: 50%;
     z-index: 10;
 }
 .return:hover {
     background: rgba(255, 255, 255, 0.11);
     border-radius: 50%;
+    cursor: cell;
+    transition: .3s;
+}
+
+.background {
+    cursor: default;
 }
 
 .details-basic {

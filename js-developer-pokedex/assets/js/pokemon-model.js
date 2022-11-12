@@ -4,5 +4,5 @@ class Pokemon {
     type;
     types = [];
     photo;
-    url;
+
 }

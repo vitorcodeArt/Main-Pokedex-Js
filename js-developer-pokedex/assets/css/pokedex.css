@@ -13,31 +13,31 @@
 }
 
 .normal {
-    background-color: #a6a877;
+    background-color: #6a6a5d;
 }
 
 .grass {
-    background-color: #4cb480;
+    background-color: #087d2b;
 }
 
 .fire {
-    background-color: #d43737;
+    background-color: #ab1414;
 }
 
 .water {
-    background-color: #476dc6;
+    background-color: #1a3983;
 }
 
 .electric {
-    background-color: #f7cf2e;
+    background-color: #bd9a0d;
 }
 
 .ice {
-    background-color: #98d5d7;
+    background-color: #589fa1;
 }
 
 .ground {
-    background-color: #dfbf69;
+    background-color: #b79432;
 }
 
 .flying {
@@ -45,7 +45,7 @@
 }
 
 .poison {
-    background-color: #a040a0;
+    background-color: #672a67;
 }
 
 .fighting {
@@ -53,7 +53,7 @@
 }
 
 .psychic {
-    background-color: #f65687;
+    background-color: #cc2054;
 }
 
 .dark {
@@ -65,11 +65,11 @@
 }
 
 .bug {
-    background-color: #a8b720;
+    background-color: #92a01a;
 }
 
 .ghost {
-    background-color: #6e5896;
+    background-color: #2a213c;
 }
 
 .steel {
@@ -81,7 +81,7 @@
 }
 
 .fairy {
-    background-color: #f9aec7;
+    background-color: #ec90af;
 }
 
 .pokemon {
@@ -94,6 +94,7 @@
     border-radius: 1rem;
     overflow: hidden;
     z-index: 5;
+    cursor: cell;
 }
 
 .pokemon .number {
@@ -164,14 +165,14 @@
 
 @keyframes bounce {
 	20% {
-			transform: translateY(-6px);
+			transform: translateY(-15px);
 	}
 	40% {
 			transform: translateY(0px);
 	}
 
 	80% {
-			transform: translateY(-2px);
+			transform: translateY(-8px);
 	}
 	100% {
 			transform: translateY(0);
