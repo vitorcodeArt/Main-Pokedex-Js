@@ -1,22 +1,81 @@
-for (let i = 0; i < pokemonList.length; i++) {
-    console.log(pokemonList[i]);
-}
+const pokeApiClick = {}
 
 function getPokemon(pokemonName) {
+    
+    var pokemonName = document.getElementById(`${pokemonName.id}`)
+    const caracteristicas = document.querySelector('.caracteristicas')
 
-    var idPokemonString = document.getElementById(`${pokemonName.id}`).querySelectorAll('.number')[0].innerHTML;
+    
+    const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName.id}`
+    
+    fetch(url)
+    .then((response) => response.json())
+    .then((jsonBody) => jsonBody)
+    .then((pokemon) => {
+        fetch(pokemon.species.url).then((res) => res.json())
+        .then((detailRequests) => Promise.all([detailRequests]))
+        .then((speciesDetails) => {
 
-    var idPokemonSplit = idPokemonString.split('');
+        })
+        caracteristicas.innerHTML = convertDetail(pokemon)
+    })
+    .catch((error) => console.log(error))   
+    
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonName.id}/`)
+    .then((r) => r.json())
+    .then((jsonBody) => jsonBody)
+    .then((species) => species)
+    
 
-    var idPokemon = '';
+        /* -----------  Manipulação CSS Jquery  -----------*/
+    
+    
+    $("body").addClass("body-click")
+    $(".caracteristicas").css("display", "block")
+    $(".pokemons").addClass("pokemons-click")
+    
+    if (window.matchMedia("(max-width:575px)").matches) {
+        $("body").addClass("body-click")
+        $(".content").css("display", "none")
+      } else if (window.matchMedia("(max-width:991px)").matches) {
+        $("body").addClass("body-click")
+        $(".content").css("display", "block")
+        $(".pokemons").addClass("pokemons-click")
+      }
+    }
 
-    idPokemonSplit.forEach(element => {
-        idPokemon = '';
-        if (element > 0) {
-            idPokemon += element;
-        }
-    });
-
-    const pokeName = document.querySelector('.pokemon.' + pokemonName.id);
-    document.getElementById('pokemon-img').src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${idPokemon}.svg`;
+function voltar() {
+    if (window.matchMedia("(max-width:575px)").matches) {
+        $("body").removeClass("body-click")
+        $(".caracteristicas").css("display", "none")
+        $(".background").css("width", "50%")
+        $(".content").css("display", "block")
+      }
 }
+
+function voltar() {
+    if (window.matchMedia("(max-width:991px)").matches) {
+        $("body").removeClass("body-click")
+        $(".caracteristicas").css("display", "none")
+        $(".background").css("width", "50%")
+        $(".content").css("display", "block")
+      }
+}
+
+function voltar() {
+    if (window.matchMedia("(max-width: 2020px)").matches) {
+        $("body").removeClass("body-click")
+        $(".caracteristicas").css("display", "none")
+        $(".content").css("display", "block")
+        $(".pokemons").removeClass("pokemons-click")
+      }
+}
+    window.addEventListener('resize', function () {
+        //var altura = window.innerHeight;
+        var largura = window.innerWidth;
+    
+        if (largura > 575)  {
+            $(".content").css("display", "block")   
+    
+        } 
+    });
