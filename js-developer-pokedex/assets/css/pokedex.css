@@ -12,75 +12,75 @@
     padding: 0;
 }
 
-.normal {
+.normal, .normal::-webkit-scrollbar-thumb {
     background-color: #6a6a5d;
 }
 
-.grass {
+.grass, .grass::-webkit-scrollbar-thumb {
     background-color: #087d2b;
 }
 
-.fire {
+.fire, .fire::-webkit-scrollbar-thumb  {
     background-color: #ab1414;
 }
 
-.water {
+.water, .water::-webkit-scrollbar-thumb  {
     background-color: #1a3983;
 }
 
-.electric {
+.electric, .electric::-webkit-scrollbar-thumb  {
     background-color: #bd9a0d;
 }
 
-.ice {
+.ice, .ice::-webkit-scrollbar-thumb  {
     background-color: #589fa1;
 }
 
-.ground {
+.ground, .ground::-webkit-scrollbar-thumb  {
     background-color: #b79432;
 }
 
-.flying {
+.flying, .flying::-webkit-scrollbar-thumb  {
     background-color: #a98ff0;
 }
 
-.poison {
+.poison, .poison::-webkit-scrollbar-thumb  {
     background-color: #672a67;
 }
 
-.fighting {
+.fighting, .fighting::-webkit-scrollbar-thumb  {
     background-color: #bf3029;
 }
 
-.psychic {
+.psychic, .psychic::-webkit-scrollbar-thumb  {
     background-color: #cc2054;
 }
 
-.dark {
+.dark, .dark::-webkit-scrollbar-thumb  {
     background-color: #725847;
 }
 
-.rock {
+.rock, .rock::-webkit-scrollbar-thumb  {
     background-color: #b8a137;
 }
 
-.bug {
+.bug, .bug::-webkit-scrollbar-thumb  {
     background-color: #92a01a;
 }
 
-.ghost {
+.ghost, .ghost::-webkit-scrollbar-thumb  {
     background-color: #2a213c;
 }
 
-.steel {
+.steel, .steel::-webkit-scrollbar-thumb  {
     background-color: #b9b7cf;
 }
 
-.dragon {
+.dragon, .dragon::-webkit-scrollbar-thumb  {
     background-color: #6f38f6;
 }
 
-.fairy {
+.fairy, .fairy::-webkit-scrollbar-thumb  {
     background-color: #ec90af;
 }
 

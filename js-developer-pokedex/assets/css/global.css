@@ -110,9 +110,22 @@ body {
         position: fixed;
     }
 }
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 745px) {
 
     .background {
         overflow: scroll;
+        overflow-x: hidden;
+    }
+    .background::-webkit-scrollbar {
+        width: 10px;   
+    }
+    
+    .background::-webkit-scrollbar-track {
+        background: rgb(0, 0, 0);
+        border-radius: 20px;   
+    }
+    .background::-webkit-scrollbar-thumb {
+        border-radius: 20px;       
+        border: 2px solid rgb(255, 255, 255);       
     }
 }
