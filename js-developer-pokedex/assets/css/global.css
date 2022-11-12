@@ -9,7 +9,7 @@
 
 body {
     background-color: var(--body-pokedex);
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .content {
@@ -25,9 +25,9 @@ body {
 
 .background {
     width: 50%;
-    height: 95vh;
+    height: 96vh;
     right: 1rem;
-    margin: 1rem auto;
+    margin-top: 1rem;
     display: grid;
     grid-template-rows: .8fr .7fr 2.1fr;
     overflow: auto;

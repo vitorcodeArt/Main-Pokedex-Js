@@ -8,6 +8,8 @@ function getPokemon(pokemonName) {
     
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName.id}`
     
+    console.log(pokemonName);
+
     fetch(url)
     .then((response) => response.json())
     .then((jsonBody) => jsonBody)
