@@ -27,6 +27,7 @@ function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons) => {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
         pokemonList.innerHTML += newHtml
+        console.log(pokemons);
     })
 }
 
@@ -48,10 +49,9 @@ loadMoreButton.addEventListener('click', () => {
 
 
 
+        /*------- Manipulação Html na section de caracteristicas -------*/
 
 
-
-                // Manipulação Html section caracteristicas
 
 function convertTypes(pokemonTypes) {
     return pokemonTypes.map((typeSlot) => `<li class="type">${typeSlot.type.name}</li>`)

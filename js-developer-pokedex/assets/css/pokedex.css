@@ -165,14 +165,14 @@
 
 @keyframes bounce {
 	20% {
-			transform: translateY(-15px);
+			transform: translateY(-13px);
 	}
 	40% {
 			transform: translateY(0px);
 	}
 
 	80% {
-			transform: translateY(-8px);
+			transform: translateY(-5px);
 	}
 	100% {
 			transform: translateY(0);

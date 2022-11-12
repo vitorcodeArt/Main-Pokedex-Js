@@ -30,9 +30,20 @@ body {
     margin: 1rem auto;
     display: grid;
     grid-template-rows: .8fr .7fr 2.1fr;
-    overflow: hidden;
+    overflow: auto;
     position: fixed;
     border-radius: 1rem;
+}
+.background::-webkit-scrollbar {
+    width: 10px;   
+}
+.background::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;   
+}
+.background::-webkit-scrollbar-thumb {
+    border-radius: 20px;       
+    border: 1.1px solid rgb(255, 255, 255);       
 }
 
 @media screen and (max-width: 575px) {
@@ -108,24 +119,5 @@ body {
         grid-template-rows: 1fr .7fr 2.1fr;
         overflow: hidden;
         position: fixed;
-    }
-}
-@media screen and (max-height: 745px) {
-
-    .background {
-        overflow: scroll;
-        overflow-x: hidden;
-    }
-    .background::-webkit-scrollbar {
-        width: 10px;   
-    }
-    
-    .background::-webkit-scrollbar-track {
-        background: rgb(0, 0, 0);
-        border-radius: 20px;   
-    }
-    .background::-webkit-scrollbar-thumb {
-        border-radius: 20px;       
-        border: 2px solid rgb(255, 255, 255);       
     }
 }

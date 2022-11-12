@@ -15,7 +15,7 @@ function getPokemon(pokemonName) {
         fetch(pokemon.species.url).then((res) => res.json())
         .then((detailRequests) => Promise.all([detailRequests]))
         .then((speciesDetails) => {
-
+            console.log(speciesDetails);
         })
         caracteristicas.innerHTML = convertDetail(pokemon)
     })
