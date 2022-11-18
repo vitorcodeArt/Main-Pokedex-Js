@@ -29,7 +29,7 @@ body {
     right: 1rem;
     margin-top: 1rem;
     display: grid;
-    grid-template-rows: .8fr .7fr 2.1fr;
+    grid-template-rows: 1fr 1fr;
     overflow: auto;
     position: fixed;
     border-radius: 1rem;
@@ -97,7 +97,7 @@ body {
         background: var(--body-pokedex);
     }
 }
-@media screen and (min-width: 1420px) {
+@media screen and (min-width: 1200px) {
     .content {
         width: 100%;
         max-width: 992px;
@@ -107,17 +107,30 @@ body {
     }
     body {
         display: grid;
-        margin: 0 150px;
+        margin: 0 15%;
         padding: 0;
     }
     .background {
-        width: calc(50% - 150px);
+        width: calc(50% - 15%);
         height: 96vh;
-        right: 165px;
-        background-color: rgb(73, 154, 116);
-        display: grid;
-        grid-template-rows: 1fr .7fr 2.1fr;
-        overflow: hidden;
-        position: fixed;
+        grid-template-rows: 1fr 1fr;
+        right: 16.1%;
     }
+
+    /* @media screen and (max-height: 600px) {
+        .content {
+            display: none;
+        }
+        body {
+            display: grid;
+            margin: 0;
+            padding: 0;
+        }
+        .background {
+            width: 97%;
+            height: 96vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        } 
+    } */
 }

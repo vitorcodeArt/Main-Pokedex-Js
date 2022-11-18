@@ -20,7 +20,7 @@
     background-color: #087d2b;
 }
 
-.fire, .fire::-webkit-scrollbar-thumb  {
+.fire, .fire::-webkit-scrollbar-thumb {
     background-color: #ab1414;
 }
 
@@ -132,7 +132,7 @@
     border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
-    background: rgba(255, 255, 255, 0.084);
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.589);
 }
 
 .pokemon .detail img {
@@ -159,25 +159,16 @@
     border-radius: 1rem;
 }
 
+.pokemon {
+    transition: .5s;
+}
+
 .pokemon:hover {
-	animation: bounce 0.5s linear;
+    transform: scale(1.07, 1.07);
+    box-shadow: 0px 0px 1px 2px #fff;
+    transition: .5s;
 }
 
-@keyframes bounce {
-	20% {
-			transform: translateY(-13px);
-	}
-	40% {
-			transform: translateY(0px);
-	}
-
-	80% {
-			transform: translateY(-5px);
-	}
-	100% {
-			transform: translateY(0);
-	}
-}
 
 @media screen and (min-width: 350px) {
     .pokemons {
