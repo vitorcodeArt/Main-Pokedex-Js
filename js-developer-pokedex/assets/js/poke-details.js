@@ -36,7 +36,8 @@ function convertPokeApiRequests(pokeDetail) {
     pokemon.sp_def = pokeDetail.stats[4]['base_stat']
     pokemon.speed = pokeDetail.stats[5]['base_stat']
 
-    const total = pokemon.atk +
+    const total = pokemon.hp +
+                  pokemon.atk +
                   pokemon.def + 
                   pokemon.sp_atk + 
                   pokemon.sp_def + 

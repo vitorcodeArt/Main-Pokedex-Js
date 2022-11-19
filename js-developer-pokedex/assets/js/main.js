@@ -3,7 +3,7 @@ const loadMoreButton = document.getElementById('loadMoreButton')
 const background = ".background"
 
 
-const maxRecords = 493
+const maxRecords = 649
 const limit = 50
 let offset = 0;
 
