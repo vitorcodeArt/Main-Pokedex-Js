@@ -1,1 +1,3 @@
-# Main-Pokedex-Js
+# Trilha JS Developer - Pokedex
+
+# Js Modificação - Pokedex
